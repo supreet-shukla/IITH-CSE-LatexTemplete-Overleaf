@@ -1,0 +1,167 @@
+# LaTeX Beamer Presentation Template
+
+This repository contains a **professional, reusable LaTeX Beamer
+template** for:
+
+-   Thesis presentations
+-   Research talks
+-   Conference presentations
+-   Project presentations
+
+It is optimized for **clarity, modularity, and GitHub usage**.
+
+------------------------------------------------------------------------
+
+# Features
+
+-   Clean Madrid theme
+-   Custom header and footer
+-   Logo support
+-   Footnotes and citations
+-   Blocks and highlighted boxes
+-   TikZ diagram support
+-   BibTeX reference support
+-   Fully commented template
+
+------------------------------------------------------------------------
+
+# Folder Structure
+
+
+    project/
+    │
+    ├── presentation-template.tex
+    ├── references.bib
+    │
+    ├── images/
+    │   ├── example.png
+    │
+    ├── logos/
+    │   ├── logo.png
+    │
+    └── README.md
+
+------------------------------------------------------------------------
+
+# How to Compile
+
+Option 1: Using terminal
+
+``` bash
+pdflatex presentation-template.tex
+bibtex presentation-template
+pdflatex presentation-template.tex
+pdflatex presentation-template.tex
+```
+
+Option 2: Using Overleaf
+
+-   Upload all files
+-   Click compile
+
+------------------------------------------------------------------------
+
+# How to Add Slides
+
+Example:
+
+``` latex
+\section{Introduction}
+
+\begin{frame}{Example Slide}
+
+\begin{itemize}
+\item First point
+\item Second point
+\end{itemize}
+
+\end{frame}
+```
+
+------------------------------------------------------------------------
+
+# How to Add Images
+
+``` latex
+\includegraphics[width=0.7\textwidth]{images/example.png}
+```
+
+------------------------------------------------------------------------
+
+# How to Add Footnotes
+
+``` latex
+Text here\footnote{Footnote text}
+```
+
+Citation:
+
+``` latex
+Text here\footcite{paperKey}
+```
+
+------------------------------------------------------------------------
+
+# How to Add Boxes
+
+Standard box:
+
+``` latex
+\begin{block}{Title}
+Content
+\end{block}
+```
+
+Alert box:
+
+``` latex
+\begin{alertblock}{Warning}
+Content
+\end{alertblock}
+```
+
+Example box:
+
+``` latex
+\begin{exampleblock}{Example}
+Content
+\end{exampleblock}
+```
+
+------------------------------------------------------------------------
+
+# How to Add References
+
+references.bib:
+
+``` bibtex
+@article{example,
+title={Example paper},
+author={Author},
+year={2024}
+}
+```
+
+Use in slide:
+
+``` latex
+\footcite{example}
+```
+
+------------------------------------------------------------------------
+
+# Recommended Usage
+
+Ideal for:
+
+-   M.Tech thesis presentations
+-   PhD defense
+-   Research conferences
+
+------------------------------------------------------------------------
+
+# Author
+
+Supreet Shukla
+
+Indian Institute of Technology Hyderabad
