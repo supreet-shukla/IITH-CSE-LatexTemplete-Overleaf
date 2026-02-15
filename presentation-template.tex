@@ -1,0 +1,126 @@
+
+\documentclass[aspectratio=169]{beamer}
+
+% ===============================
+% PACKAGES
+% ===============================
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+% ===============================
+% THEME
+% ===============================
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+% ===============================
+% COLORS
+% ===============================
+\definecolor{mainblue}{RGB}{0,51,102}
+\definecolor{lightblue}{RGB}{230,240,250}
+
+\setbeamercolor{structure}{fg=mainblue}
+\setbeamercolor{frametitle}{fg=mainblue, bg=lightblue}
+
+% ===============================
+% HEADER
+% ===============================
+\setbeamertemplate{headline}
+{
+\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,leftskip=1em]{section in head/foot}
+\insertsectionhead
+\end{beamercolorbox}
+}
+
+% ===============================
+% FOOTER
+% ===============================
+\setbeamertemplate{footline}
+{
+\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,leftskip=1em,rightskip=1em]{author in head/foot}
+Your Institute \hfill Your Name \hfill \insertframenumber / \inserttotalframenumber
+\end{beamercolorbox}
+}
+
+% ===============================
+% TITLE INFO
+% ===============================
+\title{Presentation Title}
+\subtitle{Subtitle}
+\author{Your Name}
+\institute{Your Institute}
+\date{\today}
+
+% ===============================
+% DOCUMENT START
+% ===============================
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Example Slide}
+
+\begin{itemize}
+\item First point
+\item Second point
+\item Third point
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Box Example}
+
+\begin{block}{Important}
+This is a block box.
+\end{block}
+
+\begin{alertblock}{Warning}
+This is an alert box.
+\end{alertblock}
+
+\begin{exampleblock}{Example}
+This is an example box.
+\end{exampleblock}
+
+\end{frame}
+
+\begin{frame}{Footnote Example}
+
+Example text\footnote{This is a footnote}
+
+\end{frame}
+
+\begin{frame}{Image Example}
+
+\centering
+\includegraphics[width=0.6\textwidth]{images/example.png}
+
+\end{frame}
+
+\begin{frame}{Equation Example}
+
+\[
+E = mc^2
+\]
+
+\end{frame}
+
+\begin{frame}
+\centering
+{\Huge Thank You}
+\end{frame}
+
+\end{document}
